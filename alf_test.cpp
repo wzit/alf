@@ -17,17 +17,6 @@ constexpr size_t SIZES[] = { 1, 16, 128, 512, 1024, 2048, 4096 };
 template <size_t T_size>
 struct Big
 {
-	Big() {};
-	Big(Big const &) {};
-	Big(Big&&) {};
-	~Big() {};
-
-	Big& operator= (const Big&) { return *this; }
-	Big& operator= (Big&&) { return *this; }
-
-	Big& operator () (Big const &) { return *this; };
-	Big& operator () (Big&&) { return *this; };
-	
 private:
 	alf::byte dummy[T_size];
 };

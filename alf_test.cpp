@@ -206,25 +206,25 @@ void TestOneContainer( char _size_index, char _memory_policy, char _container_si
 	case 's': //stl
 		TestOneContainerOneMemoryPolicy<
 			T_container, 
-			MemoryPolicy<alf::default_memory_policy>::Type, 1024>(_size_index, _container_size);
+			MemoryPolicy<alf::default_memory_policy>::Type, 63>(_size_index, _container_size);
 		break;
 
 	case 'f': //fixed
 		TestOneContainerOneMemoryPolicy<
 			T_container, 
-			MemoryPolicy<alf::fixed_size_memory_policy>::Type, 1024>(_size_index, _container_size);
+			MemoryPolicy<alf::fixed_size_memory_policy>::Type, 63>(_size_index, _container_size);
 		break;
 
 	case 'd':
 		TestOneContainerOneMemoryPolicy<
 			T_container, 
-			MemoryPolicy<alf::dynamic_size_fast_memory_policy>::Type, 1024>(_size_index, _container_size);
+			MemoryPolicy<alf::dynamic_size_fast_memory_policy>::Type, 63>(_size_index, _container_size);
 		break;
 
 	case 'e':
 		TestOneContainerOneMemoryPolicy<
 			T_container, 
-			MemoryPolicy<alf::dynamic_size_extended_memory_policy>::Type, 1024>(_size_index, _container_size);
+			MemoryPolicy<alf::dynamic_size_extended_memory_policy>::Type, 63>(_size_index, _container_size);
 		break;
 	}
 }

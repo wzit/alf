@@ -22,8 +22,11 @@ struct Big
 	Big(Big&&) {};
 	~Big() {};
 
-	Big& operator () (Big const &) {};
-	Big& operator () (Big&&) {};
+	Big& operator= (const Big&) { return *this; }
+	Big& operator= (Big&&) { return *this; }
+
+	Big& operator () (Big const &) { return *this; };
+	Big& operator () (Big&&) { return *this; };
 	
 private:
 	alf::byte dummy[T_size];

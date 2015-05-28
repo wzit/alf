@@ -4,7 +4,6 @@ compiler:
 
 script:
   - make
-  - cd test
   - make run
 
 os:

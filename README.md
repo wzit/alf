@@ -1,4 +1,7 @@
 # alf
+
+[![Linux Build Status](https://img.shields.io/travis/dawikur/alf/master.svg?label=Linux%20test%20build)](https://travis-ci.org/dawikur/alf)
+
 Allocator using custom memory pool.
 
 ### How to use it?
